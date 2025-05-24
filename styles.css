@@ -1,0 +1,167 @@
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, header {
+  font-family: 'Lora', serif;
+}
+
+a {
+  text-decoration: none;
+  color: #AF1B3F;
+}
+
+header {
+  background-color: #473144;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* Navigation Grid */
+header {
+  background-color: #473144;
+  color: white;
+  padding: 2em 1em;
+  text-align: center;
+  font-size: 2.8em;
+  font-weight: bold;
+  font-family: 'Lora', serif;
+}
+
+nav {
+  background-color: white;
+  border-top: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+  padding: 1em 0;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: 80px 100px 100px;
+  justify-content: end;
+  justify-items: end;
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2em;
+  padding: 0;
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav li a {
+  font-size: 1.2em;
+  line-height: 2em;
+  color: #AF1B3F;
+  text-decoration: none;
+}
+
+
+/* Main Content Grid */
+.main-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2em;
+  padding: 2em;
+}
+
+/* Filters Sidebar */
+.sidebar {
+  background-color: #fff;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.filters label {
+  display: block;
+  margin-top: 0.5em;
+  font-weight: bold;
+  color: #AF1B3F;
+}
+
+.filters select {
+  width: 100%;
+  padding: 0.3em;
+  margin-top: 0.2em;
+}
+
+/* Article Inner Grid */
+.review {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 1em;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+  margin-top: 1em;
+  background: #fff;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.review-info {
+  text-align: center;
+  font-size: 0.9em;
+  color: #473144;
+}
+
+.review-info p {
+  margin: 0.3em 0;
+}
+
+.review-content h2 {
+  margin: 0 0 0.5em;
+  color: #AF1B3F;
+}
+
+.review-content img {
+  width: 150px;
+  height: 200px;
+  background-color: #ddd;
+  margin: 1em 0;
+}
+
+.review-content p {
+  font-size: 0.9em;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.9em;
+  background-color: #eee;
+  margin-top: 2em;
+}
+.skiptocontent a {
+  position: absolute;     /* set the element to absolute positioning */
+  left: -9999px;          /* move it off screen */
+  top: 0;                 /* Make sure it will be on the left edge of the screen */
+  background: #000;       /* Change the background to black to stand out */
+  color: #fff;            /* Change the text color to white to stand out */
+  padding: 8px 16px;      /* add some padding for better click/tap area */
+  z-index: 1000;          /* ensure it appears above other content if needed */
+  text-decoration: none;  /* remove underline */
+  font-weight: bold;      /* make it stand out */
+}
+
+.skiptocontent a:focus {
+  position: absolute;     /* keep absolute positioning */
+  left: 0;                /* Move it back on when focused - left edge */
+  top: 0;                 /* top of the viewport */
+  background: #000;       /* keep background */
+  color: #fff;            /* keep color */
+  padding: 8px 16px;      /* maintain padding */
+  z-index: 1000;          /* keep on top */
+  text-decoration: underline; /* maybe underline to emphasize focus */
+}
