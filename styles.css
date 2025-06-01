@@ -165,3 +165,38 @@ footer {
   z-index: 1000;          /* keep on top */
   text-decoration: underline; /* maybe underline to emphasize focus */
 }
+/* Article styling enhancements */
+.details {
+  text-align: right;
+  line-height: 1.2em;
+  border-right: 2px solid #ccc;
+  padding: 0 1em;
+  font-size: 1.1em;
+}
+
+.details p {
+  margin: 0.4em 0;
+}
+
+/* Align the title with the date */
+.content h2 {
+  margin-top: 0;
+}
+
+/* Center book cover images */
+.content img,
+.review-content img {
+  display: block;
+  margin: 1em auto;
+}
+
+/* Space between articles */
+article {
+  margin-bottom: 2em;
+}
+
+/* Restrict main width similar to navbar */
+main#maincontent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
